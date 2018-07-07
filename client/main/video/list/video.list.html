@@ -1,0 +1,22 @@
+<div class="container">
+  <h1><span>Video</span><span class="glyphicon glyphicon-chevron-right"></span><span>List</span></h1>
+  <br />
+  <div class="row" infinite-scroll='ctrl.loadMoreRecords()'>
+    <div class="col-md-4 col-sm-12" ng-repeat="video in ctrl.videos">
+      <div class="videoDiv">
+        <div class="videoDivName" ng-click="ctrl.videoDetail(video._id)"><strong>{{video.name}}</strong></div>
+        <br />
+        <div>
+          <video height="170" onplay="playPause(this)" controls>
+            <source src="{{video.url}}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div>
+          <star-rating-comp rating="ctrl.calculateAverage(video.ratings)" disabled="true"></star-rating-comp>
+        </div>
+        <div class="videoDivDescription">{{video.description.substr(0, 80);}}...</div>
+      </div>
+    </div>
+  </div>
+</div>

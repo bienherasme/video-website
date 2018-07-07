@@ -1,0 +1,60 @@
+.loginDiv {
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-box-shadow: 0 0 10px 4px #d3d3d3;
+  -moz-box-shadow: 0 0 10px 4px #d3d3d3;
+  box-shadow: 0 0 10px 4px #d3d3d3;
+}
+.videoDiv {
+  height: 320px;
+  margin-bottom: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 4px #d3d3d3;
+  -moz-box-shadow: 0 0 10px 4px #d3d3d3;
+  box-shadow: 0 0 10px 4px #d3d3d3;
+}
+.videoDivDetail {
+  height: 280px;
+  margin-bottom: 15px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 10px 4px #d3d3d3;
+  -moz-box-shadow: 0 0 10px 4px #d3d3d3;
+  box-shadow: 0 0 10px 4px #d3d3d3;
+}
+.videoDivName {
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 30px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.videoDivDescription {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.videoDetailMain {
+  text-align: center;
+  min-height: 630px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 0 10px 4px #d3d3d3;
+  -moz-box-shadow: 0 0 10px 4px #d3d3d3;
+  box-shadow: 0 0 10px 4px #d3d3d3;
+}
+.videoDivNameDetail {
+  height: 30px;
+  padding-top: 20px;
+}
+.videoDetailSideBar {
+  min-height: 400px;
+  height: auto;
+  -webkit-box-shadow: 0 0 10px 4px #d3d3d3;
+  -moz-box-shadow: 0 0 10px 4px #d3d3d3;
+  box-shadow: 0 0 10px 4px #d3d3d3;
+}
+html { min-height: 100%; }
+body { min-height: 100%; }

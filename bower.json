@@ -1,0 +1,30 @@
+{
+  "name": "test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Bienvenido Herasme"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.7",
+    "angular-ui-router": "^1.0.11",
+    "oclazyload": "^1.1.0",
+    "ngstorage": "^0.3.11",
+    "bootstrap": "^3.3.7",
+    "angular-animate": "^1.6.7",
+    "angular-toastr": "^2.1.1",
+    "angular-sanitize": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "angular-md5": "^0.1.10",
+    "angular1-star-rating": "^1.2.11"
+  }
+}

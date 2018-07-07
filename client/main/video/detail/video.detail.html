@@ -1,0 +1,52 @@
+<div class="container">
+  <h1><a href="/#/videos"><span>Video</span></a><span class="glyphicon glyphicon-chevron-right"></span><span>Detail</span></h1>
+  <br />
+  <div class="row">
+    <div class="col-md-9 col-sm-12">
+      <div class="videoDetailMain">
+        <div class="videoDivNameDetail"><h3>{{ctrl.video.name}}</h3></div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <video height="auto" width="100%" preload="auto" onplay="playPause(this)" ng-src="{{ctrl.video.url}}" autoplay controls>
+            </video>
+          </div>
+        </div>
+        <br />
+        <div>
+          <star-rating-comp rating="ctrl.avg" on-click="ctrl.onRatingChange($event)"></star-rating-comp>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div class="videoDivDescription">
+              {{ctrl.video.description}}
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <div class="videoDetailSideBar" infinite-scroll='ctrl.loadMoreRecords()'>
+        <div ng-repeat="video in ctrl.videos | filter: ctrl.videoFilter()">
+          <div class="videoDivDetail" >
+            <div class="videoDivName" ng-click="ctrl.videoDetail(video._id)"><strong>{{video.name}}</strong></div>
+            <div>
+              <video height="120" onplay="playPause(this)" controls>
+                <source src="{{video.url}}" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+              <star-rating-comp rating="ctrl.calculateAverageSug(video.ratings)" disabled="true"></star-rating-comp>
+            </div>
+            <div class="videoDivDescription">{{video.description.substr(0, 80);}}...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
