@@ -9,7 +9,6 @@ npm install
 bower install
 ```
 # Before start the application:
-* Make sure you have Node.js installed on your computer.
 * Make sure you have MongoDB running at port 27017.
 # To start the application:
 ```
