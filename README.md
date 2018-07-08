@@ -1,2 +1,18 @@
-# Crossover Video Portal backend
-This is the backend API code that needs to be consumed by front-end applications.
+# video-website
+This is a web built with AngularJS.
+
+# How install dependencies
+```
+npm install
+```
+```
+bower install
+```
+# Before start the application:
+* Make sure you have nodejs installed on your computer.
+* Make sure you have MongoDB running at port 27017.
+# To start the application:
+```
+npm start
+```
+The application will run on http://localhost:3000
